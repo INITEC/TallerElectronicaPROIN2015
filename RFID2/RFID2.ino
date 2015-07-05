@@ -23,8 +23,6 @@ void setup()
   mySerial.begin(9600); 
   delay(10);
   pinMode(ledPin, OUTPUT);
-  pinMode(ledPin2, OUTPUT);
-  pinMode(ledPin3, OUTPUT);
   mySerial.write(0x02); //Send the command to RFID, please refer to RFID manual 
   delay(20);
 } 
